@@ -1,0 +1,29 @@
+.site-name {
+  font-family: Nastaligh, Arial, Helvetica, sans-serif;
+  color: #F78577;
+  font-size: 38px;
+  padding: 0 10px;
+  float: right;
+}
+
+.menu {
+  height: 40px;
+  line-height: 40px;
+  background: #283E49;
+}
+
+.menu>.menu-item {
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  margin: 0 5px;
+  color: #E4E3DF;
+  border-left: 1px solid #E4E3DF;
+  border-right: 1px solid #E4E3DF;
+  padding: 0 10px;
+}
+
+.menu>.menu-item:hover {
+  background: #E4E3DF;
+  color: black;
+}
