@@ -1,10 +1,15 @@
-<span class="tour-card">
-  <img src="{{ tour.image }}" />
-  <b>{{ tour.title }}</b>
-  <p>
-    {{ tour.description }}
-  </p>
-  <span class="price-tag">
-    قیمت: {{ tour.price }} تومان
-  </span>
-</span>
+<mat-card class="mat-elevation-z8">
+  <mat-card-header>
+    <mat-card-title>{{ tour.title }}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image src="{{ tour.image }}">
+  <mat-card-content>
+    <p>
+      {{ tour.description }}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="primary">قیمت: {{ tour.price }} تومان</button>
+    <button mat-raised-button>از {{ tour.startDate | persianDate }} تا {{ tour.endDate | persianDate }}</button>
+  </mat-card-actions>
+</mat-card>
